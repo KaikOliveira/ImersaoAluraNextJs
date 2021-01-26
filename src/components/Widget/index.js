@@ -49,6 +49,30 @@ Widget.Content = styled.div`
     list-style: none;
     padding: 0;
   }
+
+  form {
+    flex: 1;
+
+    input {
+      background: transparent;
+      border: 1px solid ${({ theme }) => theme.colors.primary};
+      height: 35px;
+      color: #312e38;
+      padding: 10px;
+      &::placeholder {
+        padding: 0px;
+      }
+    }
+
+    button {
+      margin-left: 10px;
+      background-color: ${({ theme }) => theme.colors.primary};
+      border: 1px solid ${({ theme }) => theme.colors.mainBg};
+      height: 35px;
+      width: 105px;
+    }
+  }
+  
 `;
 
 export default Widget;

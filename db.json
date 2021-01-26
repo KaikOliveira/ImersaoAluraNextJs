@@ -34,7 +34,7 @@
       "primary": "#2DA192",
       "secondary": "#FA7A79",
       "mainBg": "#E0F1EF",
-      "contrastText": "#333",
+      "contrastText": "#222",
       "wrong": "#FF5722",
       "success": "#4CAF50"
     },
