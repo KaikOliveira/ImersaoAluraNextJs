@@ -13,12 +13,13 @@ const FooterWrapper = styled.footer`
   }
 
   a {
-    color: #fff;
+    color: #333;
     text-decoration: none;
     transition: .3s;
     
     &:hover,
     &:focus {
+      color: #fff;
       opacity: .5;
     }
 
