@@ -51,12 +51,15 @@ Widget.Content = styled.div`
   }
 
   form {
+    display: flex;
+    flex-direction: row;
     flex: 1;
 
     input {
       background: transparent;
       border: 1px solid ${({ theme }) => theme.colors.primary};
       height: 35px;
+      width: 60%;
       color: #312e38;
       padding: 10px;
       &::placeholder {
@@ -69,10 +72,28 @@ Widget.Content = styled.div`
       background-color: ${({ theme }) => theme.colors.primary};
       border: 1px solid ${({ theme }) => theme.colors.mainBg};
       height: 35px;
-      width: 105px;
+      width: 35%;
     }
   }
   
+@media screen and (max-width: 500px) {
+  form {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      width: 100%;
+    }
+
+    button {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 8px;
+    }
+  }
+}
+
+
 `;
 
 export default Widget;
