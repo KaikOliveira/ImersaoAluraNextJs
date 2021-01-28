@@ -36,64 +36,34 @@ Widget.Header = styled.header`
 
 Widget.Content = styled.div`
   padding: 24px 32px 32px 32px;
-
   & > *:first-child {
     margin-top: 0;
   }
-
   & > *:last-child {
     margin-bottom: 0;
   }
-
   ul {
     list-style: none;
     padding: 0;
   }
+`;
 
-  form {
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-
-    input {
-      background: transparent;
-      border: 1px solid ${({ theme }) => theme.colors.primary};
-      height: 35px;
-      width: 60%;
-      color: #312e38;
-      padding: 10px;
-      &::placeholder {
-        padding: 0px;
-      }
-    }
-
-    button {
-      margin-left: 10px;
-      background-color: ${({ theme }) => theme.colors.primary};
-      border: 1px solid ${({ theme }) => theme.colors.mainBg};
-      height: 35px;
-      width: 35%;
-    }
-  }
+Widget.Topic = styled.a`
+  outline: 0;
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.contrastText};
+  background-color: ${({ theme }) => `${theme.colors.primary}40`};
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border-radius: ${({ theme }) => theme.borderRadius};
+  transition: .3s;
+  display: block;
   
-@media screen and (max-width: 500px) {
-  form {
-    display: flex;
-    flex-direction: column;
-
-    input {
-      width: 100%;
-    }
-
-    button {
-      width: 100%;
-      margin-left: 0;
-      margin-top: 8px;
-    }
+  &:hover,
+  &:focus {
+    opacity: .5;
   }
-}
-
-
 `;
 
 export default Widget;
