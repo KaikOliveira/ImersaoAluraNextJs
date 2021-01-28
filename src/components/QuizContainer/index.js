@@ -1,13 +1,17 @@
 import styled from 'styled-components';
 
 const QuizContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   max-width: 350px;
-  padding-top: 20px;
-  margin: auto 10%;
+  padding: 45px 0;
+  margin: 0 10%;
   @media screen and (max-width: 500px) {
     margin: auto;
-    padding: 10px;
+    padding: 15px;
   }
 `;
 

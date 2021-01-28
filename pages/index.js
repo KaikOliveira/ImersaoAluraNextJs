@@ -1,77 +1,60 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
-import Head from 'next/head';
 import { useRouter } from 'next/router';
-
 import db from '../db.json';
-import Widget from '../src/components/Widget';
-import QuizLogo from '../src/components/QuizLogo';
-import QuizBackground from '../src/components/QuizBackground';
-import Footer from '../src/components/Footer';
-import GitHubCorner from '../src/components/GithubCorner';
-import Input from '../src/components/Input';
-import Button from '../src/components/Button';
 
-export const QuizContainer = styled.div`
-  width: 100%;
-  max-width: 350px;
-  padding-top: 30px;
-  margin: auto 10%;
-  @media screen and (max-width: 500px) {
-    margin: auto;
-    padding: 15px;
-  }
-`;
+import Widget from '../src/components/Widget';
 
 export default function Home() {
-  const router = useRouter();
   const [name, setName] = useState('');
+  const router = useRouter();
 
   function handleSubmit(e) {
     e.preventDefault();
-
-    router.push(`/quiz?name=${name}`);
+    router.push({
+      pathname: '/quiz',
+      query: {
+        playerName: name,
+      },
+    });
   }
-
   return (
-    <QuizBackground backgroundImage={db.bg}>
-      <Head>
-        <title>{db.title}</title>
-      </Head>
-      <QuizContainer>
-        <QuizLogo />
-        <Widget>
-          <Widget.Header>
-            <h1>{db.title}</h1>
-          </Widget.Header>
-          <Widget.Content>
+    <>
+      <Widget>
+        <Widget.Header>
+          <h1>{db.title}</h1>
+        </Widget.Header>
+        <Widget.Content>
+          <form onSubmit={handleSubmit}>
             <p>{db.description}</p>
-
-            <form onSubmit={handleSubmit}>
-              <Input
-                name="nomeDoUsario"
-                onChange={(e) => setName(e.target.value)}
-                placeholder="Diz ai seu nome"
-                value={name}
-              />
-
-              <Button type="submit" disabled={name.length === 0}>
-                {`Jogar ${name}`}
-              </Button>
-            </form>
-          </Widget.Content>
-        </Widget>
-
-        <Widget>
-          <Widget.Content>
-            <h1>Quizes da Galera</h1>
-
-            <p>lorem ipsum dolor sit amet...</p>
-          </Widget.Content>
-        </Widget>
-        <Footer />
-      </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/KaikOliveira" />
-    </QuizBackground>
+            <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+            <Widget.ConfirmButton disabled={!name}>
+              JOGAR
+            </Widget.ConfirmButton>
+          </form>
+        </Widget.Content>
+      </Widget>
+      <Widget>
+        <Widget.Content>
+          <h1>Quizes da galera</h1>
+          <p>Aqui estão alguns exemplos de outros quizes feitos pela galera</p>
+          <Widget.List>
+            {db.external.map((item) => {
+              const [, , , ...display] = item.split('/');
+              return (
+                <li key={item}>
+                  <a
+                    href={item}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    {display.join('/')}
+                  </a>
+                </li>
+              );
+            })}
+          </Widget.List>
+        </Widget.Content>
+      </Widget>
+    </>
   );
 }

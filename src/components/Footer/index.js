@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const FooterWrapper = styled.footer`
   background-color: #00000070;
-  padding: 20px;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
   border-radius: 4px;
@@ -13,19 +13,26 @@ const FooterWrapper = styled.footer`
     margin-right: 23px;
   }
 
+  p {
+    color: #222;
+    font-family: Roboto, sans-serif;
+  }
+
   a {
-    color: #333;
+    color: #222;
     text-decoration: none;
     transition: .3s;
+    font-family: Roboto, sans-serif;
     
     &:hover,
     &:focus {
-      color: #fff;
+      color: #fcfcfc;
       opacity: .5;
     }
 
     span {
       text-decoration: underline;
+      font-family: Roboto, sans-serif;
     }
   }
 `;
@@ -37,7 +44,13 @@ export default function Footer(props) {
         <img src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg" alt="Logo Alura" />
       </a>
       <p>
-        Orgulhosamente criado durante
+        Orgulhosamente criado
+        {' '}
+        <a href="https://github.com/KaikOliveira" target="_blank" rel="noreferrer noopener">
+          <span>Kaik Oliveira</span>
+        </a>
+        {' '}
+        durante
         {' '}
         a
         {' '}
