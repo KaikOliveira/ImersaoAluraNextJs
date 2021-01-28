@@ -33,7 +33,7 @@ export default function QuizResult({
   return (
     <Widget>
       <Widget.Header>
-        Resulados
+        Resultados
       </Widget.Header>
       <ResultContent>
         <p>

@@ -11,8 +11,8 @@ const LoaderContainer = styled.div`
 
 const LoaderSpinner = styled.div`
   margin-bottom: 15px;
-  border: 10px solid ${({ theme }) => theme.colors.primaryDark}; /* Light grey */
-  border-top: 10px solid ${({ theme }) => theme.colors.primary}; /* Blue */
+  border: 10px solid ${({ theme }) => theme.colors.primaryDark};
+  border-top: 10px solid ${({ theme }) => theme.colors.primary}; 
   border-radius: 50%;
   width: 50px;
   height: 50px;

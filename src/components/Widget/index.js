@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Widget = styled.div`
   margin-top: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   border: 1px solid ${({ theme }) => theme.colors.primary};
   background-color: ${({ theme }) => theme.colors.mainBg};
   border-radius: 4px;
@@ -47,12 +47,12 @@ Widget.Header = styled.header`
 `;
 
 Widget.Content = styled.div`
-  padding: 24px 32px 24px 32px;
+  padding: 10px 32px 20px 32px;
   display: flex;
   flex-direction: column;
   
   p {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   & > *:first-child {
@@ -83,15 +83,21 @@ Widget.ConfirmButton = styled.button`
   color: ${({ theme }) => theme.colors.contrastText};
   padding: 10px 16px;
   width: 100%;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-weight: 550;
   transition: opacity 0.3s;
+  margin-top: 10px;
+
+  &:disabled {
+    background-color: ${({ theme }) => theme.colors.disabled};
+    cursor: default;
+    opacity: 1;
+  }
+
   &:hover {
     opacity: 0.8;
   }
-  &:disabled {
-    background-color: ${({ theme }) => theme.colors.disabled}
-  }
+  
 `;
 
 Widget.List = styled.ul`

@@ -41,7 +41,7 @@ const QuestionContent = styled.form`
 
 QuestionContent.ResultButton = styled.button`
   align-self: center;
-  color: white;
+  color: #fff;
   width: 30px;
   height: 30px;
   margin: unset auto;

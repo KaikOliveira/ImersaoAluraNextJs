@@ -7,7 +7,7 @@ export default function SiteHead() {
       <title>Quiz Ciencia | Kaik Oliveira</title>
       <link rel="icon" href="/img/mjolnir.svg" />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
-      <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
       <meta property="og:description" content="Quiz sobre o Universo Marvel" />
       <meta property="og:locale" content="pt_BR" />
       <meta property="og:site_name" content="Feliquiz Marvel" />

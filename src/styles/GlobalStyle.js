@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     display: flex;
     flex-direction: column;
-    font-family:  'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: ${({ theme }) => theme.colors.contrastText};
   }
   #__next {

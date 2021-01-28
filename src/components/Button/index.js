@@ -14,15 +14,18 @@ const Button = styled.button`
   text-transform: uppercase;
   outline: 0;
   transition: .3s;
-  cursor: pointer;
+  margin-top: 5px;
+  
+  &:disabled {
+    cursor: none;
+  }
+
   &:hover,
   &:focus {
     opacity: .5;
   }
-  &:disabled {
-    background-color: #979797;
-    cursor: not-allowed;
-  }
+
+  
 `;
 
 Button.propTypes = {
