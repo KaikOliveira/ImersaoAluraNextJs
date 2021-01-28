@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 const Widget = styled.div`
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin-top: 5px;
+  margin-bottom: 15px;
   border: 1px solid ${({ theme }) => theme.colors.primary};
   background-color: ${({ theme }) => theme.colors.mainBg};
   border-radius: 4px;
@@ -26,7 +26,7 @@ Widget.Header = styled.header`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 18px 32px;
+  padding: 18px 28px;
   background-color: ${({ theme }) => theme.colors.primary};
 
   * {
@@ -35,7 +35,7 @@ Widget.Header = styled.header`
 `;
 
 Widget.Content = styled.div`
-  padding: 24px 32px 32px 32px;
+  padding: 24px 32px 24px 32px;
   & > *:first-child {
     margin-top: 0;
   }
