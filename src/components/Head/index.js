@@ -12,14 +12,14 @@ export default function SiteHead() {
       <meta property="og:locale" content="pt_BR" />
       <meta property="og:site_name" content="Quiz de Ciencias" />
       <meta property="og:url" content="https://quiz-ciencia-alura.vercel.app/" />
-      <meta property="og:image" content="" />
+      <meta property="og:image" content="https://github.com/KaikOliveira/ImersaoAluraNextJs/blob/main/assets/background.png" />
       <meta property="og:image:type" content="image/png" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="660" />
       <meta property="og:image:alt" content="Quiz Ciencias" />
       <meta property="twitter:description" content="Quiz sobre Ciencias" />
       <meta property="twitter:creator" content="Kaik Oliveira" />
-      <meta property="twitter:image" content="" />
+      <meta property="twitter:image" content="https://github.com/KaikOliveira/ImersaoAluraNextJs/blob/main/assets/background.png" />
       <meta property="twitter:site" content="Quiz sobre Ciencias" />
     </Head>
   );
