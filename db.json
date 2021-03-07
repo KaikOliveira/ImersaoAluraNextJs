@@ -21,7 +21,7 @@
       "image": "https://media.giphy.com/media/MpiuhjnGiyjwnFx6ZK/giphy.gif",
       "title": "Quantos ossos tem uma pessoa adulta",
       "description": "Nao vale contar haha",
-      "answer": 2,
+      "answer": 1,
       "alternatives": [
          "98",
          "206",
@@ -33,12 +33,95 @@
       "image": "https://media.giphy.com/media/e5Nk5sBNnA46yUuC9R/giphy.gif",
       "title": "Qual é o maior osso do corpo humano",
       "description": "Qual sera ?",
-      "answer": 1,
+      "answer": 0,
       "alternatives": [
          "Fêmur",
          "Parietal",
          "Tíbia",
          "ulna"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/e5Nk5sBNnA46yUuC9R/giphy.gif",
+      "title": "Qual tipo sanguinio é doador universal ?",
+      "description": "Qual sera ?",
+      "answer": 3,
+      "alternatives": [
+         "AB +",
+         "B -",
+         "A +",
+         "O -"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/e5Nk5sBNnA46yUuC9R/giphy.gif",
+      "title": "Eritrocito é o mesmo que : ",
+      "description": "Qual sera ?",
+      "answer": 0,
+      "alternatives": [
+         "Leucócito",
+         "Hemacia",
+         "Osso",
+         "Sangue"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/e5Nk5sBNnA46yUuC9R/giphy.gif",
+      "title": "Qual é o maior osso do corpo humano",
+      "description": "Qual sera ?",
+      "answer": 0,
+      "alternatives": [
+         "Fêmur",
+         "Parietal",
+         "Tíbia",
+         "ulna"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/e5Nk5sBNnA46yUuC9R/giphy.gif",
+      "title": "Qual é a doença causada pelo virus influenza ?",
+      "description": "Qual sera ?",
+      "answer": 0,
+      "alternatives": [
+         "Gripe",
+         "Dengue",
+         "Covid",
+         "Virose"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/e5Nk5sBNnA46yUuC9R/giphy.gif",
+      "title": "Apesar de serem animais diferentes, um gato, um pássaro e um peixe são animais vertebrados.",
+      "description": "Estes animais são considerados vertebrados pois possuem ?",
+      "answer": 2,
+      "alternatives": [
+         "Pelos",
+         "Patas",
+         "Coluna vertebral",
+         "Sistema respiradorio"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/e5Nk5sBNnA46yUuC9R/giphy.gif",
+      "title": "Os vegetais produzem seu próprio alimento pela realização da fotossíntese.",
+      "description": "A fonte de energia para a realização da fotossíntese é ?",
+      "answer": 0,
+      "alternatives": [
+         "Luz",
+         "Água",
+         "Adubo",
+         "Gás Carbônico"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/e5Nk5sBNnA46yUuC9R/giphy.gif",
+      "title": "Qual o primeiro elemento quimico da tabela periodica ?",
+      "description": "O unico elemento que seu numero atomico é 1",
+      "alternatives": [
+         "Cloro",
+         "Litio",
+         "Hidrogenio",
+         "Fosforo"
       ]
     }
   ],
